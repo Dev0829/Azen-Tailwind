@@ -1,0 +1,1 @@
+export { Hed } from "./Hed";
