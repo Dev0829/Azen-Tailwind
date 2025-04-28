@@ -9,7 +9,7 @@ export const DivWrapper = (): JSX.Element => {
             <img
               className="absolute w-[100px] h-[100px] top-[45px] left-[139px]"
               alt="Windows"
-              src="https://c.animaapp.com/1RqcQWfO/img/windows-1-1.svg"
+              src="/src/assets/windows-icon.svg"
             />
 
             <div className="absolute top-[155px] left-[137px] [font-family:'Maven_Pro',Helvetica] font-medium text-[#e56db1] text-xl tracking-[0] leading-[normal] whitespace-nowrap">
@@ -28,7 +28,7 @@ export const DivWrapper = (): JSX.Element => {
               <img
                 className="absolute w-[85px] h-[100px] top-0 left-[46px]"
                 alt="Element"
-                src="https://c.animaapp.com/1RqcQWfO/img/-----1.svg"
+                src="/src/assets/windows.svg"
               />
             </div>
           </div>
@@ -37,11 +37,11 @@ export const DivWrapper = (): JSX.Element => {
 
       <div className="flex flex-col w-[881px] h-[490px] items-start gap-2.5 relative bg-[#151517] rounded-[20px]">
         <div className="relative w-[881px] h-[490px]">
-          <div className="relative w-[901px] h-[510px] -top-2.5 -left-2.5 bg-[url(https://c.animaapp.com/1RqcQWfO/img/image-63455618.png)] bg-[100%_100%]">
+          <div className="relative w-[901px] h-[510px] -top-2.5 -left-2.5 bg-[url(/src/assets/background-image.png)] bg-[100%_100%]">
             <img
               className="absolute w-[167px] h-[120px] top-[195px] left-[367px]"
               alt="Element"
-              src="https://c.animaapp.com/1RqcQWfO/img/-----1-1.svg"
+              src="/src/assets/android.svg"
             />
           </div>
         </div>

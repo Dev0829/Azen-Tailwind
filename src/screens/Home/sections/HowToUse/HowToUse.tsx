@@ -1,6 +1,4 @@
 import React from "react";
-import { HiconBoldFilter4 } from "../../../../icons/HiconBoldFilter4";
-
 export const HowToUse = (): JSX.Element => {
   return (
     <div className="inline-flex items-center gap-[50px] absolute top-[1210px] left-20">
@@ -17,7 +15,7 @@ export const HowToUse = (): JSX.Element => {
           <img
             className="relative w-[153.75px] h-[153.75px]"
             alt="Vector"
-            src="https://c.animaapp.com/1RqcQWfO/img/vector-1.png"
+            src="/src/assets/hero-illustration.png"
           />
         </div>
 
@@ -46,7 +44,7 @@ export const HowToUse = (): JSX.Element => {
           <img
             className="relative w-[176.25px] h-[131.25px]"
             alt="Vector"
-            src="https://c.animaapp.com/1RqcQWfO/img/vector-3.png"
+            src="/src/assets/feature-icon.png"
           />
         </div>
 
@@ -72,7 +70,11 @@ export const HowToUse = (): JSX.Element => {
             </div>
           </div>
 
-          <HiconBoldFilter4 className="!relative !w-[180px] !h-[180px]" />
+          <img
+            className="relative w-[147px] h-[147px]"
+            alt="Vector"
+            src="/src/assets/camera-icon.png"
+          />
         </div>
 
         <div className="flex flex-col items-center gap-5 relative self-stretch w-full flex-[0_0_auto]">

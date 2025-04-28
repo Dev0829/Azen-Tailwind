@@ -6,7 +6,7 @@ export const Basic = (): JSX.Element => {
       <img
         className="relative w-[636px] h-[533px] object-cover"
         alt="Image"
-        src="https://c.animaapp.com/1RqcQWfO/img/image.png"
+        src="/src/assets/hero-image.png"
       />
 
       <div className="flex flex-col w-[427px] h-[481px] items-start justify-between relative">
@@ -27,7 +27,7 @@ export const Basic = (): JSX.Element => {
             <img
               className="relative self-stretch w-full h-px object-cover"
               alt="Line"
-              src="https://c.animaapp.com/1RqcQWfO/img/line-2.svg"
+              src="/src/assets/separator-line.svg"
             />
 
             <div className="flex w-[426px] items-center justify-between relative flex-[0_0_auto]">

@@ -8,7 +8,7 @@ export const FrameWrapper = (): JSX.Element => {
           <img
             className="relative w-[568px] h-[190px]"
             alt="Frame"
-            src="https://c.animaapp.com/1RqcQWfO/img/frame-427321523.png"
+            src="/src/assets/feature-card-1.png"
           />
 
           <div className="flex flex-col items-start gap-5 relative self-stretch w-full flex-[0_0_auto]">
@@ -52,7 +52,7 @@ export const FrameWrapper = (): JSX.Element => {
           <img
             className="relative w-[568px] h-[190px] mb-[-6.00px]"
             alt="Frame"
-            src="https://c.animaapp.com/1RqcQWfO/img/frame-427321523-1.png"
+            src="/src/assets/feature-card-2.png"
           />
         </div>
       </div>
@@ -62,7 +62,7 @@ export const FrameWrapper = (): JSX.Element => {
           <img
             className="relative w-[568px] h-[190px]"
             alt="Frame"
-            src="https://c.animaapp.com/1RqcQWfO/img/frame-427321523-2.png"
+            src="/src/assets/feature-card-3.png"
           />
 
           <div className="flex flex-col items-start gap-5 relative self-stretch w-full flex-[0_0_auto] mb-[-6.00px]">
@@ -89,7 +89,7 @@ export const FrameWrapper = (): JSX.Element => {
           <img
             className="relative w-[568px] h-[190px]"
             alt="Frame"
-            src="https://c.animaapp.com/1RqcQWfO/img/frame-427321523-3.png"
+            src="/src/assets/feature-card-4.png"
           />
 
           <div className="flex flex-col items-start gap-5 relative self-stretch w-full flex-[0_0_auto] mb-[-6.00px]">

@@ -5,7 +5,7 @@ import { Div } from "./sections/Div";
 import { DivWrapper } from "./sections/DivWrapper";
 import { Frame } from "./sections/Frame";
 import { FrameWrapper } from "./sections/FrameWrapper";
-import { Hed } from "./sections/Hed";
+import { Header } from "./sections/Header";
 import { HowToUse } from "./sections/HowToUse";
 
 export const Home = (): JSX.Element => {
@@ -14,7 +14,7 @@ export const Home = (): JSX.Element => {
       <div className="bg-neutral-950 overflow-hidden w-[1440px] h-[6589px] relative">
         <div className="absolute w-[1444px] h-[850px] top-[2935px] left-[-181px]">
           <div className="absolute w-[885px] h-[795px] top-[55px] left-0">
-            <div className="relative w-[767px] h-[1010px] -top-24 left-[181px] bg-[url(https://c.animaapp.com/1RqcQWfO/img/vector-2.svg)] bg-[100%_100%]">
+            <div className="relative w-[767px] h-[1010px] -top-24 left-[181px] bg-[url(/src/assets/background-pattern.svg)] bg-[100%_100%]">
               <div className="relative w-[266px] h-[189px] top-[519px] left-[438px] bg-[#ffc72c] rounded-[133px/94.5px] blur-[100px]" />
             </div>
           </div>
@@ -33,11 +33,11 @@ export const Home = (): JSX.Element => {
           <img
             className="absolute w-[1440px] h-[823px] top-[95px] left-0 object-cover"
             alt="Photo"
-            src="https://c.animaapp.com/1RqcQWfO/img/photo-1.png"
+            src="/src/assets/team-photo.png"
           />
 
           <AzenIptvStreaming />
-          <Hed />
+          <Header />
         </div>
 
         <Frame />
@@ -66,14 +66,14 @@ export const Home = (): JSX.Element => {
         <img
           className="absolute w-[67px] h-[67px] top-[3202px] left-[1293px]"
           alt="Frame"
-          src="https://c.animaapp.com/1RqcQWfO/img/frame-427321506.svg"
+          src="/src/assets/header-frame.svg"
         />
 
         <p className="absolute top-[3804px] left-20 [font-family:'Maven_Pro',Helvetica] font-medium text-white text-[50px] tracking-[0] leading-[normal] whitespace-nowrap">
           Why Choose Azen IPTV Streaming LLC?
         </p>
 
-        <div className="absolute w-[306px] h-[284px] top-[3982px] left-[732px] bg-[url(https://c.animaapp.com/1RqcQWfO/img/vector-1-1.svg)] bg-[100%_100%]">
+        <div className="absolute w-[306px] h-[284px] top-[3982px] left-[732px] bg-[url(/src/assets/comment-icon.svg)] bg-[100%_100%]">
           <div className="flex flex-col w-[266px] items-start gap-10 absolute top-5 left-5">
             <div className="flex flex-col w-[30px] items-start justify-end gap-5 relative flex-[0_0_auto]">
               <div className="flex items-center gap-[5px] relative self-stretch w-full flex-[0_0_auto]">
@@ -102,7 +102,7 @@ export const Home = (): JSX.Element => {
           <img
             className="absolute w-[60px] h-[60px] top-0 left-[246px]"
             alt="Frame"
-            src="https://c.animaapp.com/1RqcQWfO/img/frame-427321530.svg"
+            src="/src/assets/footer-frame.svg"
           />
         </div>
 
@@ -237,20 +237,20 @@ export const Home = (): JSX.Element => {
           <img
             className="absolute w-[679px] h-[1083px] top-0 left-[98px]"
             alt="Ellipse"
-            src="https://c.animaapp.com/1RqcQWfO/img/ellipse-7.png"
+            src="/src/assets/avatar-placeholder.png"
           />
 
           <img
             className="absolute w-[648px] h-[594px] top-[273px] left-[129px] object-cover"
             alt="Image"
-            src="https://c.animaapp.com/1RqcQWfO/img/image-63455617.png"
+            src="/src/assets/product-showcase.png"
           />
 
           <div className="flex w-[254px] h-[254px] items-center justify-center gap-2.5 p-[7px] absolute top-[475px] left-3 rotate-[-5.95deg]">
             <img
               className="relative w-[208.68px] h-[208.68px] rotate-[5.95deg]"
               alt="Frame"
-              src="https://c.animaapp.com/1RqcQWfO/img/frame-427321571.png"
+              src="/src/assets/cta-frame.png"
             />
           </div>
         </div>
@@ -269,80 +269,32 @@ export const Home = (): JSX.Element => {
               <img
                 className="relative w-[163.66px] h-[42px]"
                 alt="Group"
-                src="https://c.animaapp.com/1RqcQWfO/img/group-5@2x.png"
+                src="/src/assets/feature-icons-1.png"
               />
             </div>
 
             <div className="flex flex-col w-[261px] h-[84px] items-center justify-center gap-2.5 relative bg-[#151517] rounded-[20px]">
-              <div className="relative w-[175.6px] h-[42px]">
-                <img
-                  className="absolute w-[60px] h-2.5 top-0.5 left-11"
-                  alt="Vector"
-                  src="https://c.animaapp.com/1RqcQWfO/img/vector-4.svg"
-                />
-
-                <img
-                  className="absolute w-[132px] h-[26px] top-4 left-11"
-                  alt="Vector"
-                  src="https://c.animaapp.com/1RqcQWfO/img/vector-5.svg"
-                />
-
-                <img
-                  className="absolute w-9 h-10 top-0 left-0"
-                  alt="Group"
-                  src="https://c.animaapp.com/1RqcQWfO/img/group@2x.png"
-                />
-              </div>
+              <img
+                className="relative w-[163.66px] h-[42px]"
+                alt="Group"
+                src="/src/assets/feature-icons-2.png"
+              />
             </div>
 
             <div className="flex flex-col w-[261px] h-[84px] items-center justify-center gap-2.5 relative bg-[#151517] rounded-[20px]">
-              <div className="relative w-[198px] h-[42px] overflow-hidden">
-                <img
-                  className="absolute w-[90px] h-[13px] top-0 left-[45px]"
-                  alt="Group"
-                  src="https://c.animaapp.com/1RqcQWfO/img/group-1@2x.png"
-                />
-
-                <img
-                  className="absolute w-[154px] h-[19px] top-[21px] left-11"
-                  alt="Vector"
-                  src="https://c.animaapp.com/1RqcQWfO/img/vector-6.svg"
-                />
-
-                <div className="absolute w-9 h-[42px] top-0 left-0">
-                  <div className="h-[42px]">
-                    <div className="relative w-9 h-[42px]">
-                      <img
-                        className="absolute w-4 h-[11px] top-0 left-2"
-                        alt="Handles"
-                        src="https://c.animaapp.com/1RqcQWfO/img/handles@2x.png"
-                      />
-
-                      <img
-                        className="absolute w-9 h-[33px] top-2 left-0"
-                        alt="Path"
-                        src="https://c.animaapp.com/1RqcQWfO/img/path211.svg"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <img
+                className="relative w-[163.66px] h-[42px]"
+                alt="Group"
+                src="/src/assets/feature-icons-3.png"
+              />
             </div>
 
             <div className="flex flex-col w-[261px] h-[84px] items-center justify-center gap-2.5 relative bg-[#151517] rounded-[20px]">
-              <div className="relative w-[158px] h-[45px]">
-                <img
-                  className="absolute w-[123px] h-[11px] top-0 left-[5px]"
-                  alt="Vector"
-                  src="https://c.animaapp.com/1RqcQWfO/img/vector-7.svg"
-                />
-
-                <img
-                  className="absolute w-[147px] h-[27px] top-[18px] left-[5px]"
-                  alt="Group"
-                  src="https://c.animaapp.com/1RqcQWfO/img/group-2@2x.png"
-                />
-              </div>
+              <img
+                className="relative w-[163.66px] h-[42px]"
+                alt="Group"
+                src="/src/assets/feature-icons-4.png"
+              />
             </div>
           </div>
 
