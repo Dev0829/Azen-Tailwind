@@ -2,112 +2,88 @@ import React from "react";
 
 export const FrameWrapper = (): JSX.Element => {
   return (
-    <div className="flex flex-wrap w-[1280px] items-start gap-[20px_20px] absolute top-10 left-0">
-      <div className="flex flex-col w-[630px] h-[395px] items-start gap-2.5 p-[30px] relative bg-[#151517] rounded-[20px]">
-        <div className="flex flex-col h-[335px] items-start gap-10 relative self-stretch w-full">
-          <img
-            className="relative w-[568px] h-[190px]"
-            alt="Frame"
-            src="/src/assets/feature-card-1.png"
-          />
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 w-full [font-family:'Maven_Pro',Helvetica]">
+      {/* Card 1 */}
+      <div className="flex flex-col gap-8 p-8 bg-[#151517] rounded-[20px]">
+        <img
+          className="w-full h-48 object-cover rounded-lg"
+          alt="Flexible Settings"
+          src="/src/assets/feature-card-1.png"
+        />
 
-          <div className="flex flex-col items-start gap-5 relative self-stretch w-full flex-[0_0_auto]">
-            <div className="flex items-start gap-5 relative self-stretch w-full flex-[0_0_auto]">
-              <div className="relative w-fit mt-[-1.00px] [font-family:'Maven_Pro',Helvetica] font-normal text-[#e56db1] text-3xl tracking-[0] leading-[normal] whitespace-nowrap">
-                0.1
-              </div>
-
-              <div className="relative w-fit mt-[-1.00px] [font-family:'Maven_Pro',Helvetica] font-normal text-white text-3xl tracking-[0] leading-[normal] whitespace-nowrap">
-                Flexible settings
-              </div>
-            </div>
-
-            <p className="relative self-stretch [font-family:'Maven_Pro',Helvetica] font-normal text-[#989898] text-lg tracking-[0] leading-[normal]">
-              EPG, parental control, change of players, the leading IPTV player
-              offering high quality and multiple platforms.
-            </p>
+        <div className="flex flex-col gap-5">
+          <div className="flex items-center gap-3 md:gap-5">
+            <span className="text-[#e56db1] text-2xl md:text-3xl">0.1</span>
+            <h3 className="text-white text-2xl md:text-3xl">Flexible settings</h3>
           </div>
+
+          <p className="text-[#989898] text-base md:text-lg">
+            EPG, parental control, change of players, the leading IPTV player
+            offering high quality and multiple platforms.
+          </p>
         </div>
       </div>
 
-      <div className="flex flex-col w-[630px] h-[395px] items-start gap-2.5 p-[30px] relative rounded-[20px] border border-solid border-[#353535]">
-        <div className="flex flex-col h-[321px] items-start gap-10 relative self-stretch w-full">
-          <div className="flex flex-col items-start gap-5 relative self-stretch w-full flex-[0_0_auto]">
-            <div className="flex items-start gap-5 relative self-stretch w-full flex-[0_0_auto]">
-              <div className="relative w-fit mt-[-1.00px] [font-family:'Maven_Pro',Helvetica] font-normal text-[#e56db1] text-3xl tracking-[0] leading-[normal] whitespace-nowrap">
-                0.2
-              </div>
-
-              <div className="relative w-fit mt-[-1.00px] [font-family:'Maven_Pro',Helvetica] font-normal text-white text-3xl tracking-[0] leading-[normal] whitespace-nowrap">
-                Stable streaming
-              </div>
-            </div>
-
-            <p className="relative self-stretch [font-family:'Maven_Pro',Helvetica] font-normal text-[#989898] text-lg tracking-[0] leading-[normal]">
-              No freezes or buffering, the leading IPTV player offering high
-              quality and multiple platforms.
-            </p>
+      {/* Card 2 */}
+      <div className="flex flex-col gap-8 p-8 rounded-[20px] border border-solid border-[#353535]">
+        <div className="flex flex-col gap-5">
+          <div className="flex items-center gap-3 md:gap-5">
+            <span className="text-[#e56db1] text-2xl md:text-3xl">0.2</span>
+            <h3 className="text-white text-2xl md:text-3xl">Stable streaming</h3>
           </div>
 
-          <img
-            className="relative w-[568px] h-[190px] mb-[-6.00px]"
-            alt="Frame"
-            src="/src/assets/feature-card-2.png"
-          />
+          <p className="text-[#989898] text-base md:text-lg">
+            No freezes or buffering, the leading IPTV player offering high
+            quality and multiple platforms.
+          </p>
+        </div>
+
+        <img
+          className="w-full h-48 object-cover rounded-lg"
+          alt="Stable Streaming"
+          src="/src/assets/feature-card-2.png"
+        />
+      </div>
+
+      {/* Card 3 */}
+      <div className="flex flex-col gap-8 p-8 bg-[#151517] rounded-[20px]">
+        <img
+          className="w-full h-48 object-cover rounded-lg"
+          alt="Compatibility"
+          src="/src/assets/feature-card-3.png"
+        />
+
+        <div className="flex flex-col gap-5">
+          <div className="flex items-center gap-3 md:gap-5">
+            <span className="text-[#e56db1] text-2xl md:text-3xl">0.3</span>
+            <h3 className="text-white text-2xl md:text-3xl">Compatibility</h3>
+          </div>
+
+          <p className="text-[#989898] text-base md:text-lg">
+            TVs, smartphones, tablets, the leading IPTV player offering high
+            quality and multiple platforms.
+          </p>
         </div>
       </div>
 
-      <div className="flex flex-col w-[630px] h-[395px] items-start gap-2.5 p-[30px] relative bg-[#151517] rounded-[20px]">
-        <div className="flex flex-col h-[321px] items-start gap-10 relative self-stretch w-full">
-          <img
-            className="relative w-[568px] h-[190px]"
-            alt="Frame"
-            src="/src/assets/feature-card-3.png"
-          />
+      {/* Card 4 */}
+      <div className="flex flex-col gap-8 p-8 bg-[#151517] rounded-[20px]">
+        <img
+          className="w-full h-48 object-cover rounded-lg"
+          alt="Format Support"
+          src="/src/assets/feature-card-4.png"
+        />
 
-          <div className="flex flex-col items-start gap-5 relative self-stretch w-full flex-[0_0_auto] mb-[-6.00px]">
-            <div className="flex items-start gap-5 relative self-stretch w-full flex-[0_0_auto]">
-              <div className="relative w-fit mt-[-1.00px] [font-family:'Maven_Pro',Helvetica] font-normal text-[#e56db1] text-3xl tracking-[0] leading-[normal] whitespace-nowrap">
-                0.3
-              </div>
-
-              <div className="relative w-fit mt-[-1.00px] [font-family:'Maven_Pro',Helvetica] font-normal text-white text-3xl tracking-[0] leading-[normal] whitespace-nowrap">
-                Compatibility
-              </div>
-            </div>
-
-            <p className="relative self-stretch [font-family:'Maven_Pro',Helvetica] font-normal text-[#989898] text-lg tracking-[0] leading-[normal]">
-              TVs, smartphones, tablets, the leading IPTV player offering high
-              quality and multiple platforms.
-            </p>
+        <div className="flex flex-col gap-5">
+          <div className="flex items-center gap-3 md:gap-5">
+            <span className="text-[#e56db1] text-2xl md:text-3xl">0.4</span>
+            <h3 className="text-white text-2xl md:text-3xl">Supports various formats</h3>
           </div>
-        </div>
-      </div>
 
-      <div className="flex flex-col w-[630px] h-[395px] items-start gap-2.5 p-[30px] relative bg-[#151517] rounded-[20px]">
-        <div className="flex flex-col h-[321px] items-start gap-10 relative self-stretch w-full">
-          <img
-            className="relative w-[568px] h-[190px]"
-            alt="Frame"
-            src="/src/assets/feature-card-4.png"
-          />
-
-          <div className="flex flex-col items-start gap-5 relative self-stretch w-full flex-[0_0_auto] mb-[-6.00px]">
-            <div className="flex items-start gap-5 relative self-stretch w-full flex-[0_0_auto]">
-              <div className="relative w-fit mt-[-1.00px] [font-family:'Maven_Pro',Helvetica] font-normal text-[#e56db1] text-3xl tracking-[0] leading-[normal] whitespace-nowrap">
-                0.4
-              </div>
-
-              <div className="relative w-fit mt-[-1.00px] [font-family:'Maven_Pro',Helvetica] font-normal text-white text-3xl tracking-[0] leading-[normal] whitespace-nowrap">
-                Supports various formats
-              </div>
-            </div>
-
-            <p className="relative self-stretch [font-family:'Maven_Pro',Helvetica] font-normal text-[#989898] text-lg tracking-[0] leading-[normal]">
-              M3U, Xtream Codes API, the leading IPTV player offering high
-              quality and multiple platforms.
-            </p>
-          </div>
+          <p className="text-[#989898] text-base md:text-lg">
+            M3U, Xtream Codes API, the leading IPTV player offering high
+            quality and multiple platforms.
+          </p>
         </div>
       </div>
     </div>

@@ -2,48 +2,41 @@ import React from "react";
 
 export const DivWrapper = (): JSX.Element => {
   return (
-    <div className="flex w-[1280px] items-center gap-5 absolute top-[5719px] left-20">
-      <div className="flex flex-col w-[379px] items-start gap-5 relative">
-        <div className="relative w-[381px] h-[235px] mr-[-2.00px]">
-          <div className="relative w-[379px] h-[235px] bg-[#151517] rounded-[20px]">
-            <img
-              className="absolute w-[100px] h-[100px] top-[45px] left-[139px]"
-              alt="Windows"
-              src="/src/assets/windows-icon.svg"
-            />
-
-            <div className="absolute top-[155px] left-[137px] [font-family:'Maven_Pro',Helvetica] font-medium text-[#e56db1] text-xl tracking-[0] leading-[normal] whitespace-nowrap">
-              on Windows
-            </div>
+    <div className="grid grid-cols-12 gap-4">
+      <div className="col-span-12 md:col-span-4 flex flex-col gap-4">
+        <div className="bg-[#151517] rounded-[20px] cursor-pointer p-8 flex flex-col items-center justify-center md:h-[235px] h-[185px] hover:bg-[#1e1e20] transition-all duration-300 hover:scale-105 group">
+          <img
+            className="w-24 h-24 mb-4 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6"
+            alt="Windows"
+            src="/src/assets/windows-icon.svg"
+          />
+          <div className="[font-family:'Maven_Pro',Helvetica] font-medium text-[#e56db1] text-lg md:text-xl group-hover:text-white transition-colors duration-300">
+            on Windows
           </div>
         </div>
 
-        <div className="relative w-[381px] h-[235px] mr-[-2.00px]">
-          <div className="relative w-[379px] h-[235px] bg-[#151517] rounded-[20px]">
-            <div className="absolute top-[155px] left-[123px] [font-family:'Maven_Pro',Helvetica] font-medium text-[#e56db1] text-xl tracking-[0] leading-[normal] whitespace-nowrap">
-              on Android TV
-            </div>
-
-            <div className="absolute w-44 h-[100px] top-[45px] left-[101px]">
-              <img
-                className="absolute w-[85px] h-[100px] top-0 left-[46px]"
-                alt="Element"
-                src="/src/assets/windows.svg"
-              />
-            </div>
+        <div className="bg-[#151517] rounded-[20px] cursor-pointer p-8 flex flex-col items-center justify-center md:h-[235px] h-[185px] hover:bg-[#1e1e20] transition-all duration-300 hover:scale-105 group">
+          <div className="w-24 h-24 mb-4 flex items-center justify-center">
+            <img
+              className="w-20 h-24 transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-6"
+              alt="Android TV"
+              src="/src/assets/windows.svg"
+            />
+          </div>
+          <div className="[font-family:'Maven_Pro',Helvetica] font-medium text-[#e56db1] text-lg md:text-xl group-hover:text-white transition-colors duration-300">
+            on Android TV
           </div>
         </div>
       </div>
 
-      <div className="flex flex-col w-[881px] h-[490px] items-start gap-2.5 relative bg-[#151517] rounded-[20px]">
-        <div className="relative w-[881px] h-[490px]">
-          <div className="relative w-[901px] h-[510px] -top-2.5 -left-2.5 bg-[url(/src/assets/background-image.png)] bg-[100%_100%]">
-            <img
-              className="absolute w-[167px] h-[120px] top-[195px] left-[367px]"
-              alt="Element"
-              src="/src/assets/android.svg"
-            />
-          </div>
+      <div className="col-span-12 md:col-span-8 bg-[#151517] rounded-[20px] p-8 relative overflow-hidden hover:bg-[#1e1e20] transition-all duration-300 group min-h-[185px]">
+        <div className="absolute inset-0 bg-[url(/src/assets/background-image.png)] bg-cover bg-center transition-transform duration-700 group-hover:scale-110"></div>
+        <div className="relative hover-scale z-10 flex items-center justify-center h-full">
+          <img
+            className="w-[74px] h-[54px] md:w-40 md:h-32 cursor-pointer transition-all duration-500 group-hover:scale-125 group-hover:rotate-12 group-hover:brightness-125"
+            alt="Android"
+            src="/src/assets/android.svg"
+          />
         </div>
       </div>
     </div>

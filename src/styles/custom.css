@@ -1,0 +1,159 @@
+/* Custom styles for Azen IPTV Streaming */
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #151517;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e56db1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff8cc6;
+}
+
+/* Custom animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Custom utility classes */
+.hover-scale {
+  transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+}
+
+.text-gradient {
+  background: linear-gradient(45deg, #e56db1, #ffc72c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.glass-effect {
+  background: rgba(21, 21, 23, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(229, 109, 177, 0.2);
+}
+
+/* Custom button styles */
+.custom-button {
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.custom-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(229, 109, 177, 0.2),
+    transparent
+  );
+  transition: 0.5s;
+}
+
+.custom-button:hover::before {
+  left: 100%;
+}
+
+/* Custom card styles */
+.feature-card {
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.feature-card:hover {
+  border-color: #e56db1;
+  box-shadow: 0 0 20px rgba(229, 109, 177, 0.2);
+}
+
+/* Custom input styles */
+.custom-input {
+  background: #151517;
+  border: 1px solid #2a2a2a;
+  transition: all 0.3s ease;
+}
+
+.custom-input:focus {
+  border-color: #e56db1;
+  box-shadow: 0 0 0 2px rgba(229, 109, 177, 0.2);
+}
+
+/* Custom loading animation */
+.loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid #151517;
+  border-top: 3px solid #e56db1;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 
+
+.bar-1 {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+
+.bar-3 {
+  transform: rotate(-45deg) translate(6px, -7px);
+}
+
+.swiper-pagination {
+  display: none;
+}
+
+.swiper {
+  width: 90%;
+  margin-left: 0;
+}
+
+@media (max-width: 768px) {
+  .swiper {
+    width: 100%;
+  }
+}
+
