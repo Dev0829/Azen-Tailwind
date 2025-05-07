@@ -12,7 +12,7 @@ export const Home = (): JSX.Element => {
   return (
     <>
       <Header />
-      <main className="bg-neutral-950 flex flex-col items-center w-full min-h-screen">
+      <main className="home bg-neutral-950 flex flex-col items-center w-full min-h-screen">
         {/* Hero Section */}
         <section className="w-full flex items-center pt-[105px] h-[100vh]">
           <img

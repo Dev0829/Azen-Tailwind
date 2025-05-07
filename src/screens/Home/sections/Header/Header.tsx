@@ -1,42 +1,55 @@
 import React, { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 
 const navigationItems = [
-  { label: "Pricing", href: "#pricing" },
-  { label: "Team", href: "#team" },
-  { label: "Resellers", href: "#resellers" },
-  { label: "Playlists", href: "#playlists" },
-  { label: "FAQ", href: "#faq" },
-  { label: "Contact Us", href: "#contact" },
+  { label: "Pricing", href: "/#pricing" },
+  { label: "Team", href: "/team" },
+  { label: "Resellers", href: "/resellers" },
+  { label: "Playlists", href: "/playlists" },
+  { label: "FAQ", href: "/faq" },
+  { label: "Contact Us", href: "/contact" },
 ];
 
 export const Header = (): JSX.Element => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const isActive = (href: string) => {
+    if (href.startsWith('/#')) {
+      return location.pathname === '/' && location.hash === href.substring(1);
+    }
+    return location.pathname === href;
+  };
+
   return (
     <header className="fixed z-50 top-0 left-0 w-full bg-[#151517] h-[105px] px-4 sm:px-20 py-[30px]">
       <nav className="max-w-[1280px] mx-auto flex items-center justify-between">
-        <a href="/" className="block">
+        <Link to="/" className="block">
           <img
             className="w-[51px] md:w-[77px] h-[30px] md:h-[50px]"
             alt="Main Logo"
             src="/src/assets/main-logo.svg"
           />
-        </a>
+        </Link>
 
         {/* Desktop Navigation */}
         <ul className="hidden md:flex items-center md:gap-[35px] lg:gap-[70px]">
           {navigationItems.map((item) => (
             <li key={item.label}>
-              <a
-                href={item.href}
-                className="[font-family:'Maven_Pro',Helvetica] text-[#989898] text-base hover:text-[#e56db1] transition-colors"
+              <Link
+                to={item.href}
+                className={`[font-family:'Maven_Pro',Helvetica] text-base transition-colors ${
+                  isActive(item.href)
+                    ? 'text-[#e56db1] font-semibold'
+                    : 'text-[#989898] hover:text-[#e56db1]'
+                }`}
               >
                 {item.label}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
@@ -59,13 +72,17 @@ export const Header = (): JSX.Element => {
           <ul className="flex flex-col items-between justify-between h-[70%] px-4 sm:px-20 py-4">
             {navigationItems.map((item) => (
               <li key={item.label} className="w-full">
-                <a
-                  href={item.href}
-                  className="block py-4 [font-family:'Maven_Pro',Helvetica] text-[#989898] text-base hover:text-[#e56db1] transition-colors"
+                <Link
+                  to={item.href}
+                  className={`block py-4 [font-family:'Maven_Pro',Helvetica] text-base transition-colors ${
+                    isActive(item.href)
+                      ? 'text-[#e56db1] font-semibold'
+                      : 'text-[#989898] hover:text-[#e56db1]'
+                  }`}
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.label}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>

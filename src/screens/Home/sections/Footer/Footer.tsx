@@ -34,8 +34,8 @@ export const Footer = (): JSX.Element => {
                   <div className="flex flex-col gap-5">
                     <h3 className="[font-family:'Maven_Pro',Helvetica] font-normal text-white text-lg md:text-3xl">Support</h3>
                     <div className="flex flex-col gap-5">
-                      <a href="#" className="[font-family:'Maven_Pro',Helvetica] font-normal hover:text-[#e56db1] transition-colors text-[#989898] text-sm md:text-base">FAQ</a>
-                      <a href="#" className="[font-family:'Maven_Pro',Helvetica] font-normal hover:text-[#e56db1] transition-colors text-[#989898] text-sm md:text-base">Contact Us</a>
+                      <a href="/faq" className="[font-family:'Maven_Pro',Helvetica] font-normal hover:text-[#e56db1] transition-colors text-[#989898] text-sm md:text-base">FAQ</a>
+                      <a href="/contact" className="[font-family:'Maven_Pro',Helvetica] font-normal hover:text-[#e56db1] transition-colors text-[#989898] text-sm md:text-base">Contact Us</a>
                     </div>
                   </div>
 
