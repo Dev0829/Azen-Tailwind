@@ -42,9 +42,9 @@ export const Contact = (): JSX.Element => {
             <h1 className="text-white text-[30px] font-medium md:text-[50px] mb-4 md:mb-8">Contact Us</h1>
             <p className="text-[#999999] text-lg md:text-xl mb-8">Get in touch with us for inquiries, support, or feedback. We're here to help.</p>
             
-            <div className="grid grid-cols-12 gap-10 lg:gap-4">
+            <div className="grid grid-cols-12 lg:gap-4">
               {/* Contact Form */}
-              <div className="col-span-12 lg:col-span-8 bg-[#151517] p-8 rounded-[20px]">
+              <div className="col-span-12 lg:col-span-8 bg-[#151517] p-8 rounded-[20px] mb-10 lg:mb-0">
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-4">
                     <div>
